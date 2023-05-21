@@ -10,3 +10,5 @@ app.use(express.json());
 require('./routes/htmlRoutes')(app);
 
 app.listen(PORT, () => console.log(`Now listening on port: ${PORT}`));
+
+// * load a service worker from the root directory of the web server so that its scope is as broad as possible
